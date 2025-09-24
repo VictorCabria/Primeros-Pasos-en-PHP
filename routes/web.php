@@ -11,6 +11,8 @@ $router->get('/about', [AboutController::class, 'index']);
 $router->get('/links', [LinksController::class, 'index']);
 $router->get('/links/create', [LinksController::class, 'create']);
 $router->post('/links/store', [LinksController::class, 'store']);
-$router->delete('/links/delete', [HomeController::class, 'destroy']);
+$router->get('/links/edit', [LinksController::class, 'edit']);
+$router->put('/links/update',    [LinksController::class, 'update']);
+$router->delete('/links/delete', [LinksController::class, 'destroy']);
 
 ?>
